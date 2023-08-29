@@ -1,0 +1,157 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --cor-primaria:#89C5CC;
+    --cor-secundaria:#7D7987;
+    --branco:#F9F9F9;
+    --preto:#000000;
+    --cor-item:#69B99D;
+    --cor-hover:#1F1534;
+
+    --font-primaria:'Mulish', sans-serif;
+    --font-secundaria: 'Open Sans', sans-serif;
+
+    --cor-background-body:linear-gradient(180deg, rgba(227, 255, 248, 0.00) 0%, rgba(227, 255, 248, 0.38) 100%);
+}
+
+body{
+    background:var(--cor-background-body);
+    min-height: 100vh; /* Toda area de visualização visivel*/
+    
+}
+
+#page{
+    width: 1280px;
+    margin: 0 auto;
+}
+
+
+/* CABEÇALHO */
+
+#cabecalho{
+    padding-top: 65px;
+    margin: 0 auto ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo__menu{
+    color: var(--cor-primaria);
+    font-family: var(--font-primaria);
+    font-weight: 700;
+    font-size: 22px;
+}
+
+.cabecalho-menu-nav{
+display: flex;
+gap: 48px;
+align-items: center;
+}
+
+.cabecalho-menu-nav li{
+    list-style: none;
+}
+
+.menu-nav__link{
+    text-decoration: none;
+    font-family: var(--font-primaria);
+    font-size: 18px;
+    color: var(--cor-hover);
+    opacity: 1;
+}
+
+.menu-nav__link:hover{
+    font-weight: bold;
+}
+
+/* CONTEÚDO PRINCIPAL */
+
+#container{
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    margin: auto;
+    padding-top: 100px;
+}
+
+.container__content{
+    width: 489.382px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.content__titulo{
+    font-family: var(--font-primaria);
+    font-weight: normal;
+    font-size: 49px;
+    font-weight: 700;
+}
+
+.content__titulo span{
+    color: var(--cor-primaria);
+}
+
+.container__content p{
+    color: var(--cor-secundaria);
+    font-family: var(--font-secundaria);
+    line-height: 28px; 
+}
+
+.container__contato{
+    width: 180px;
+    height: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background: var(--cor-item);
+    font-size: 1rem;
+    font-family: var(--font-secundaria);
+    text-transform: uppercase;
+    border-radius: 4px;
+    border:none;
+    color: var(--branco);
+    cursor: pointer;
+}
+
+.container__contato:hover{
+    background: #36bb8c;
+}
+
+.container__contato img{
+    padding-bottom: 3px;
+}
+
+#balls-decoration{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+}
+
+/* RODAPE */
+
+#rodape{
+    text-align: center;
+    width: 592px;
+    height: 28px;
+    margin: 80px auto 30px;
+}
+
+#rodape p{
+    font-family: var(--font-secundaria);
+    font-size: 14px;
+    line-height: 28px;
+}
+
+#rodape p a{
+    text-decoration: none;
+    font-weight: 700;
+    color: var(--preto);
+}
+
